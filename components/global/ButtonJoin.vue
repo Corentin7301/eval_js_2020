@@ -21,7 +21,7 @@
 <style lang="scss">
   .buttonJoin {
     font-family: "HelveticaNeue";
-    font-weight: light;
+    font-weight: lighter;
     transition: 0.2s;
     background: $blue;
     min-width: 560px;

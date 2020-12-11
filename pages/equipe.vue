@@ -1,5 +1,7 @@
 <template>
-  
+<div class="equipe">
+  <EquipeGrid />
+</div>
 </template>
 
 <script>
@@ -13,6 +15,9 @@ data() {
 }
 </script>
 
-<style>
+<style lang="scss">
+.equipe {
+  width: 100%;
+}
 
 </style>

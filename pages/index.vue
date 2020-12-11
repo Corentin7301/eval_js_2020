@@ -33,7 +33,7 @@
     margin: 0 50px 0 250px;
     height: 1100px;
     overflow: hidden;
-    z-index: 1;
+    z-index: 0;
 
     #logoGray {
       position: absolute;
@@ -53,10 +53,10 @@ h1 {
     }
 
     h2 {
-      font-family: "HelveticaNeueLight";
+      font-family: "HelveticaNeue";
+      font-weight: lighter;
       font-size: 38px;
       color: $white;
-
       margin-bottom: 50px;
     }
 

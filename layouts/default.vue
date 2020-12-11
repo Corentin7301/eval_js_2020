@@ -10,7 +10,6 @@
 <style lang="scss" scoped>
   body {
     min-height: 100vh;
-
   }
 
   div {
@@ -23,6 +22,7 @@
       left: 84px;
       width: 145px;
       height: 145px;
+      z-index: 100;
     }
   }
 
