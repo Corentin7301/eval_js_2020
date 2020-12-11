@@ -11,8 +11,8 @@
 
     data() {
       return {
-
-      }
+        
+        }
     },
   }
 
@@ -27,6 +27,7 @@
     color: $white;
     font-size: 38px;
     padding: 20px 230px 20px 40px;
+    max-width: 700px;
 
     &:hover {
       background-color: $white;
@@ -40,6 +41,7 @@
       color: $white;
       font-size: 28px;
       padding: 20px 70px 20px 20px;
+        max-width: 700px;
 
       &:hover {
         background-color: $white;
