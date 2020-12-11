@@ -1,0 +1,7 @@
+$navBarHeight: 70px;
+
+.container {
+  margin: 0 auto;
+  min-height: calc(100vh - $navBarHeight);
+  width: 1200px;
+}
