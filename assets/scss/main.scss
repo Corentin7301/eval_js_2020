@@ -30,6 +30,17 @@ body {
   font-weight: regular;
 }
 
+@font-face {
+  font-family: "HelveticaNeueLight";
+  src: url("/assets/fonts/HelveticaNeueLight.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Bison";
+  src: url("/assets/fonts/Bison-Bold.ttf") format("ttf");
+  font-weight: bold;
+}
+
 *,
 *::before,
 *::after {
