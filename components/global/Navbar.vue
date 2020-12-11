@@ -1,4 +1,3 @@
-
 <template>
   <nav>
     <nuxt-link to="/">
@@ -7,61 +6,69 @@
         alt="logo"
       > -->
     </nuxt-link>
-    <nuxt-link
-      v-for="item in items" 
-      :key="item.name"
-      :to="item.page"
-      class="button"
-    >{{item.name}}</nuxt-link>
+    <nuxt-link v-for="item in items" :key="item.name" :to="item.page" class="button">
+      {{item.name}}
+    </nuxt-link>
   </nav>
 </template>
 
 <script>
-export default {
-  name: 'Navbar',
+  export default {
+    name: 'Navbar',
     data() {
       return {
-        items: [
-          {name: 'Accueil', page: '/'},
-          {name: 'A propos', page: '/about'},
-          {name: 'Contact', page: '/contact'}
+        items: [{
+            name: 'Accueil',
+            page: '/'
+          },
+          {
+            name: 'Equipe',
+            page: '/equipe'
+          },
+          {
+            name: 'Contact',
+            page: '/contact'
+          }
         ]
       }
     }
-}
+  }
+
 </script>
 
 <style lang="scss" scoped>
-nav {
-  a {
-    text-decoration: inherit;
-    color: inherit;
-  }
-  width: 1200px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  font-family: "HelveticaNeue";
-  font-weight: bold;
-  .button {
-    color: #292724;
-    font-size: 22px;
-    text-transform: uppercase;
-    padding: 0 21px;
-    border-right: solid 1px grey;
-  }
-  .button:last-child {
-    border-right: none;
-  }
-  .button:hover,
-  .nuxt-link-exact-active {
-    color: $yellow;
+  nav {
+    background-color: $darkGrey;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-family: "HelveticaNeue";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      text-decoration: inherit;
+      color: inherit;
+    }
+
+    .button {
+      color: $white;
+      font-size: 22px;
+      padding: 0 50px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      transition: 0.2s;
+    }
+
+    .button:hover,
+    .nuxt-link-exact-active {
+      background-color: $lightGrey;
+      transition: 0.3s;
+
+    }
   }
 
-  img {
-    height: 128px;
-  }
-}
 </style>
-
-

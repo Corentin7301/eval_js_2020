@@ -7,11 +7,15 @@
       :to="item.page"
       class="button"
     >{{item.name}}</nuxt-link>
+   <nuxt-link to="/"><img src="~/assets/img/visual-studio-code.svg" alt="vscode-logo"></nuxt-link>
+    <nuxt-link
+      v-for="item in menu" 
+      :key="item.name"
+      :to="item.page"
+      class="button"
+    >{{item.name}}</nuxt-link>
     </div>
-    <div class="footer-col">
-   
-        <social-share display="inline" />
-    </div>
+
   </div>
 </template>
 
@@ -21,10 +25,15 @@ export default {
   data() {
     return {
       items: [
-          {name: 'Accueil', page: '/'},
+          {name: 'VSCode', page: '/vscode'},
+          {name: 'Corporation', page: '/corporation'},
+          {name: 'CGV', page: '/cgv'}
+        ],
+      menu: [
           {name: 'A propos', page: '/about'},
+          {name: 'Equipe', page: '/equipe'},
           {name: 'Contact', page: '/contact'}
-        ]
+      ]
     };
   },
 };
@@ -32,21 +41,21 @@ export default {
 
 <style lang="scss" scoped>
 #footer {
-  height: 300px;
-  background: $coolGrad;
+  height: 79px;
+  background: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
   .footer-col {
-    flex: 0 1 400px;
     display: flex;
-    flex-direction: column;
     a,
     p {
-      font-size: 30px;
-      color: white;
+      font-size: 21px;
+      color: $darkGrey;
       text-decoration: inherit;
       font-family: "HelveticaNeue";
+      margin: 0 15px 0 15px;
+
       &:hover {
         font-weight: bold;
       }
@@ -62,7 +71,7 @@ export default {
 
 .form-cta {
   color: white;
-  background: $coolGrad;
+  background: #FFFFFF;
   border: none;
   padding: 8px 12px;
 }

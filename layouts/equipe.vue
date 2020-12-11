@@ -1,6 +1,5 @@
 <template>
   <div>
-    <img src="~/assets/img/visual-studio-code_blue.svg" alt="vscode-logo" id="logoBlue">
     <Navbar />
     <Nuxt />
     <Footer />
@@ -10,7 +9,6 @@
 <style lang="scss" scoped>
   body {
     min-height: 100vh;
-
   }
 
   div {
