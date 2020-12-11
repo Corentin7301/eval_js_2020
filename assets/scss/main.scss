@@ -31,8 +31,9 @@ body {
 }
 
 @font-face {
-  font-family: "HelveticaNeueLight";
+  font-family: "HelveticaNeue";
   src: url("/assets/fonts/HelveticaNeueLight.ttf") format("ttf");
+  font-weight: light;
 }
 
 @font-face {
