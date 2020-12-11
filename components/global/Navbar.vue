@@ -1,11 +1,7 @@
 <template>
   <nav>
-    <nuxt-link to="/">
-      <!-- <img
-        src="@/assets/images/logo.svg"
-        alt="logo"
-      > -->
-    </nuxt-link>
+    <img src="~/assets/img/visual-studio-code_blue.svg" alt="vscode-logo" id="logoBlue">
+
     <nuxt-link v-for="item in items" :key="item.name" :to="item.page" class="button">
       {{item.name}}
     </nuxt-link>
@@ -51,6 +47,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    #logoBlue {
+      position: absolute;
+      top: 18px;
+      left: 84px;
+      width: 145px;
+      height: 145px;
+      z-index: 100;
+    }
 
     a {
       text-decoration: inherit;
@@ -90,6 +95,9 @@
         background-color: $white;
         color: $blue;
       }
+    }
+    #logoBlue {
+      display: none;
     }
   }
 

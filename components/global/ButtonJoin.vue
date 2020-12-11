@@ -24,15 +24,28 @@
     font-weight: lighter;
     transition: 0.2s;
     background: $blue;
-    min-width: 560px;
-    min-height: 86px;
     color: $white;
     font-size: 38px;
     padding: 20px 230px 20px 40px;
+
     &:hover {
       background-color: $white;
       color: $blue;
       transition: 0.3s;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .buttonJoin {
+      color: $white;
+      font-size: 28px;
+      padding: 20px 70px 20px 20px;
+
+      &:hover {
+        background-color: $white;
+        color: $blue;
+        transition: 0.3s;
+      }
     }
   }
 

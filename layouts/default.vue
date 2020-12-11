@@ -1,6 +1,5 @@
 <template>
   <div>
-    <img src="~/assets/img/visual-studio-code_blue.svg" alt="vscode-logo" id="logoBlue">
     <Navbar />
     <Nuxt />
     <Footer />
@@ -16,14 +15,13 @@
     background-color: $background;
     position: relative;
 
-    #logoBlue {
-      position: absolute;
-      top: 18px;
-      left: 84px;
-      width: 145px;
-      height: 145px;
-      z-index: 100;
+  }
+  @media screen and (max-width: 1024px) {
+    body {
+      div {
+        max-width: 100%;
+        background-color: $white;
+      }
     }
   }
-
 </style>

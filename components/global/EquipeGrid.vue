@@ -11,7 +11,8 @@
           <h3 class="email">{{user.email}}</h3>
 
         </div>
-        <nuxt-link to="https://github.com/"><img src="~/assets/img/Github.svg" alt="github" class="github"></nuxt-link>
+        <!-- Pas de nuxt link ici car il me redirigeait sur /https://github.com et non sur https://github.com -->
+        <a href="https://github.com" target="_blank"><img src="~/assets/img/Github.svg" alt="github" class="github"></a>
 
       </div>
     </div>

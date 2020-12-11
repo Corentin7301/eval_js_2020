@@ -44,7 +44,7 @@
       z-index: -1;
     }
 
-h1 {
+    h1 {
       margin-top: 100px;
       font-family: "Bison";
       font-weight: bold;
@@ -63,6 +63,47 @@ h1 {
     .vscodeWindow {
       margin-top: 200px;
       width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    #home {
+      margin: 0;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      #logoGray {
+        display: none;
+        // position: absolute;
+        // top: 49px;
+        // left: 395px;
+        // width: 805px;
+        // height: 809px;
+        // z-index: -1;
+      }
+
+      h1 {
+        margin-top: 100px;
+        font-family: "Bison";
+        font-weight: bold;
+        font-size: 80px;
+        color: $white;
+      }
+
+      h2 {
+        font-family: "HelveticaNeue";
+        font-weight: lighter;
+        font-size: 28px;
+        color: $white;
+        margin-bottom: 50px;
+      }
+
+      .vscodeWindow {
+        margin-top: 100px;
+        width: 100%;
+      }
     }
   }
 
